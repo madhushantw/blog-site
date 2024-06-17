@@ -63,13 +63,13 @@ const Navbar = () => {
     })
 
     return ( 
-        <nav className="navbar dark:text-gray-100 shadow-md">
+        <nav className="shadow-md navbar dark:text-gray-100">
             <h1 className="text-2xl font-medium">Blogma</h1>
             <div className="link">
                 <Link to="/">Home</Link>
                 <Link to="/create">New Blog</Link>
             </div>
-            <div className="ml-5 duration-100 dark: dark:bg-slate-800 bg-gray-100 rounded">
+            <div className="ml-5 duration-100 bg-gray-100 rounded dark: dark:bg-slate-800">
 
             {
                 options?.map(opt=>(
