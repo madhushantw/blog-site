@@ -24,7 +24,7 @@ const Navbar = () => {
         }
     ];
 
-    function onWindowMtch(){
+    function onWindowMach(){
         if(
             localStorage.theme === 'dark' || 
             (!("theme" in localStorage) && darkQury.matches)
@@ -34,7 +34,7 @@ const Navbar = () => {
             element.classList.remove('dark');
         }
     }
-    onWindowMtch();
+    onWindowMach();
 
     useEffect(() => {
         switch (theme) {
@@ -48,7 +48,6 @@ const Navbar = () => {
                 break;
             default:
                 localStorage.removeItem('theme');
-                onWindowMtch();
                 break;
         }
         
